@@ -11,11 +11,6 @@ import java.util.Arrays;
 public class PointSet {
     private Point[] points;
 
-
-    //TEST GIT
-
-
-
     /**
      * Creates a new instance of PointSet.
      */
