@@ -31,11 +31,6 @@ public class PointSetTest {
     @Test
     public void shouldPointWasAdded() {
         PointSet points = new PointSet();
-
-
-
-
-        
         assertThat(points.add(new Point(5, 4))).isTrue();
         assertThat(points.add(new Point(2, 4))).isTrue();
         assertThat(points.get(0).isEqualTo(new Point(5, 4))).isTrue();
