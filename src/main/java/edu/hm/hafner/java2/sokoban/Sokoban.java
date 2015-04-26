@@ -21,8 +21,6 @@ public class Sokoban {
             throw new IllegalArgumentException("Level must not be null!");
         }
 
-        //adfjaödfkajödfkajdöfajkdföakjdföakdjf
-
         this.level = new Field[level.length][level[0].length];
         int lengthOfLevel = level[0].length;
 

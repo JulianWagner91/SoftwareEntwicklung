@@ -249,7 +249,7 @@ public class SokobanTest {
         sokoban.setPlayer(new Point(4, 5));
         sokoban.addTreasure(new Point(3, 3));
 
-        //Check player is out of field
+        //Check treasure is out of field
         assertThatThrownBy(() -> {
             sokoban.addTreasure(new Point(2, 1));
             sokoban.validate();
@@ -386,5 +386,3 @@ public class SokobanTest {
         }).isInstanceOf(IllegalArgumentException.class);
     }
 }
-
-//adfjaödfkajödfkajdöfajkdföakjdföakdjf
