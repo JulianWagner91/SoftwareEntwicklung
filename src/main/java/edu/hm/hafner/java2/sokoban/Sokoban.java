@@ -25,6 +25,9 @@ public class Sokoban {
         int lengthOfLevel = level[0].length;
 
         for (int i = 0; i < level.length; i++) {
+            if (level[i] == null) {
+                throw new IllegalArgumentException("Line must not be null!");
+            }
             if (level[i].length != lengthOfLevel) {
                 throw new IllegalArgumentException("Length of the lines are not equal!");
             }

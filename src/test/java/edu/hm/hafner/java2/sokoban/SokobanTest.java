@@ -94,6 +94,15 @@ public class SokobanTest {
         }).isInstanceOf(IllegalArgumentException.class);
 
         assertThatThrownBy(() -> {
+            Field[][] level = {
+                    {BACKGROUND, BACKGROUND},
+                    null,
+                    {BACKGROUND, BACKGROUND}
+            };
+            sokoban.setLevel(level);
+        }).isInstanceOf(IllegalArgumentException.class);
+
+        assertThatThrownBy(() -> {
             Field[][] level = new Field[][]{
                     {BACKGROUND, BACKGROUND, BACKGROUND, BACKGROUND, BACKGROUND, BACKGROUND, BACKGROUND, BACKGROUND},
                     {BACKGROUND, WALL, WALL, WALL, BACKGROUND, BACKGROUND, BACKGROUND},
